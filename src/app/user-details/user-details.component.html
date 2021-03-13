@@ -1,0 +1,28 @@
+<h1> User Details </h1>
+
+<hr>
+
+<div style="padding-left: 20px;">
+    <label>Id : </label> <label>{{user?.id}}</label>
+    <br>
+    <br>
+    <label>FirstName : </label> <label>{{user?.first_name}}</label>
+    <br>
+    <br>
+    <label>LastName : </label> <label>{{user?.last_name}}</label>
+    <br>
+    <br>
+    <label>Email : </label> <label>{{user?.email}}</label>
+    <br>
+    <br>
+    <label>Image : </label> 
+    <br>
+    <br>
+    <img [src]="user?.avatar" alt="User Image" />
+</div>
+<br>
+<br>
+<br>
+<div>
+    <button (click)="backToList()">Back to List</button>
+</div>

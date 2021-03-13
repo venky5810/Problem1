@@ -1,0 +1,7 @@
+<h2>Users List</h2>
+<hr>
+<div *ngFor="let user of usersList" style="padding-left: 20px;">
+    <a (click)="navigateToDetails(user.id)"> {{user.first_name + ' ' + user.last_name}} </a>
+    <br>
+    <br>
+</div>
